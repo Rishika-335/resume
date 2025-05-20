@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks, colorlinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\hypersetup{%
+  colorlinks=true,% hyperlinks will be coloured
+  linkcolor=blue,% hyperlink text will be green
+  linkbordercolor=blue,% hyperlink border will be red
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Rishika Paul} \\ \vspace{1pt}
+    \href{mailto:rishikapaul335@gmail.com}{\underline{rishikapaul335@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/rishika-paul}{\underline{linkedin.com/in/rishika-paul}} $|$
+    \href{https://github.com/Rishika-335}{\underline{Github @Rishika-335}}
+    
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.cuchd.in/}{Chandigarh University} [QS World University Ranking \textbf{231}]}{Mohali, Punjab}
+      {B.E in Computer Science and Engineering, \textbf{CGPA:} 8.4/10.0}{August 2023 -- Expected June. 2027}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    \resumeSubheading
+      {\href{https://www.hackbyte.in/}{HackByte 3.0}}{Madhya Pradesh}
+      {Implementation}{April 2025}
+      \resumeItemListStart
+        \resumeItem{Awarded Best Beginner Team out of 128+ teams for building a smart musical glove using gesture-based input and multi-instrument sound playback.}
+        \resumeItem{Designed and implemented the PyQt5-based desktop UI with real-time sensor data display and audio feedback.}
+        \resumeItem{Developed backend logic in Python to process IMU, flex, and ToF sensor inputs, enabling accurate chord recognition across guitar, piano, and drum datasets.}
+        
+    
+      \resumeItemListEnd
+      
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    
+     \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://devfolio.co/projects/harmoni-hand-ca5e}{Harmoni Hand }}{[Arduino, Python, Sensors (IMU, Flex, ToF)]}}{April 2025}
+          \resumeItemListStart
+            \resumeItem{\textbf{Problem:} Traditional music learning requires different instruments, physical dexterity, and costly hardware—limiting access for beginners and differently-abled users. }
+            \resumeItem{\textbf{Solution:}A smart glove-based musical interface that maps hand gestures and movements to chords in real-time, enabling audio playback for guitar, piano, and drums.}
+            \resumeItem{\textbf{Designed With:} Cross-instrument gesture recognition—learn a gesture once and apply it across instruments for real-time feedback and sound. Increases accessibility by replacing complex instruments with a low-cost, portable glove that enables intuitive, gesture-based learning for all skill levels.}
+            
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/Rishika-335/MedShare.git}{\textbf{MedShare}}}{ [ Kotlin, Java (Spring Boot), MongoDB, AWS]}}{January 2025 - April 2025}
+          \resumeItemListStart
+            \resumeItem{\textbf{Problem:} Limited access to essential medicines during late hours or emergencies in hostels and apartments. }
+            \resumeItem{\textbf{Solution:} A real-time, peer-to-peer mobile app that allows users to request and share medicines nearby using location-based matching and instant communication. }
+            \resumeItem{\textbf{Designed With: }Privacy-focused architecture and a clean, responsive user interface for quick emergency handling. }
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages(Proficient)}{: Java, Python, MySQL} \\
+     \textbf{Frameworks(Proficient)}{: Jetpack Compose, Flask } \\
+     \textbf{Languages(Familiar)}{: C, C++, Kotlin, Latex }\\
+     \textbf{Other Skills}{: Microsoft tools(Powerpoint, Word, Excel), Figma, Canva }
+    }}
+ \end{itemize}
+%-----------Professional Soft SKILLS-----------
+\section{Soft Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Strong analytical and problem-solving mindset
+
+Effective team collaboration and clear technical communication
+
+Fast learner, adaptable to new technologies and frameworks
+
+Takes ownership with a high sense of responsibility
+
+Detail-oriented in implementation and design
+    }}
+ \end{itemize}
+
+\section{Awards and Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \resumeItemListStart
+                \resumeItem{\textbf{\href{https://www.linkedin.com/posts/rishika-paul_academicachiever2024-cuachievers-proudmoment-activity-7329553783133261824-rIKx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEUDyVEB38NT-gRomefAchmVkePi1lT5fGc}{Achiever's Award 2025 at Chandigarh University}}}
+                \resumeItem{\textbf{\href{https://www.linkedin.com/posts/rishika-paul_hackbyte3-bestbeginnerteam-hackathon-activity-7316168620303085568-4Kkw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEUDyVEB38NT-gRomefAchmVkePi1lT5fGc}{Hackathon Winner at HackByte 3.0 }}
+                \resumeItem{\textbf{Gold Medalist in International Mathematical Olympiad(IMO) in 2020}}
+      \resumeItemListEnd
+    }}
+ \end{itemize}
+ 
+
+\end{document}
