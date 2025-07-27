@@ -1,54 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f2f2f2;
-            color: #333;
-            flex-direction: column;
-        }
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redirecting...</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .loader {
-            border: 6px solid #e0e0e0;
-            border-top: 6px solid #4CAF50;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin-bottom: 20px;
-        }
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+    .card {
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      color: #333;
+      max-width: 300px;
+    }
 
-        h2 {
-            margin: 0;
-            font-weight: normal;
-        }
-    </style>
+    .loader {
+      border: 6px solid rgba(255, 255, 255, 0.3);
+      border-top: 6px solid #4CAF50;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .message {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .sub-message {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
+  <div class="card">
     <div class="loader"></div>
-    <h2>Loading your resume, please wait...</h2>
+    <div class="message">Loading your resume...</div>
+    <div class="sub-message">Please wait while we redirect you.</div>
+  </div>
 
-    <script>
-        // Redirect after a short delay (optional, e.g., 1.5 seconds)
-        setTimeout(() => {
-            window.location.href = "resume.pdf";
-        }, 1500);
-    </script>
+  <script>
+    setTimeout(() => {
+      window.location.href = "resume.pdf";
+    }, 1800);
+  </script>
 </body>
 </html>
