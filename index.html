@@ -4,14 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading, wait....</title>
+    <title>Redirecting...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+            color: #333;
+            flex-direction: column;
+        }
+
+        .loader {
+            border: 6px solid #e0e0e0;
+            border-top: 6px solid #4CAF50;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        h2 {
+            margin: 0;
+            font-weight: normal;
+        }
+    </style>
 </head>
 <body>
-    Loading, wait....
+    <div class="loader"></div>
+    <h2>Loading your resume, please wait...</h2>
+
+    <script>
+        // Redirect after a short delay (optional, e.g., 1.5 seconds)
+        setTimeout(() => {
+            window.location.href = "resume.pdf";
+        }, 1500);
+    </script>
 </body>
-
-<script>
-    location.href = "resume.pdf";
-</script>
-
 </html>
